@@ -1,0 +1,177 @@
+\documentclass[11pt]{article}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\begin{document}
+
+
+
+\title{A Python Tourist Guide}
+\author{Omar A. Guerrero\thanks{Institute for New Economic Thinking and Saïd Business School, University of Oxford}}
+\date{}
+\maketitle
+
+
+This document provides a short guide through the essentials for setting up the python programming language in your machine. Python is an invaluable research tool, not only because of its closely resemblance to human language, but also because of its wide adoption in the broader scientific community. This means that, in the increasingly interdisciplinary world that we live in, working with python will make a universe of analytical tools from different fields available to you in an instant. This document is part of the guide that I provide to my students when they incursion in the world of computationally-informed sciences. Therefore, I make it available to anyone interested in taking advantage of this tool. 
+
+This is not a tutorial on how to use python, but a guide that will refer you to the most relevant tools to learn fast and efficiently. Everything that I will point to in this document is referred to the original source, so you should think of this document as a \emph{tourist guide}. For further information you should use the \href{https://docs.python.org/2/tutorial/}{official python tutorial}.
+
+
+\section{Version and Distribution}
+
+There are several versions of the Python programming language. I prefer working with \href{https://www.python.org/download/releases/2.7/}{version 2.7} since it has the widest support of the scientific community today. Python can be obtained in different ways or ''distributions". A distribution is nothing more than the python language together with a bunch of packages (also known as libraries) that the distributor decides to put together. However, you are not limited to those packages because you can download and install other packages pretty easily.
+
+In order to get you started, download the distribution known as \href{https://store.continuum.io/cshop/anaconda/}{Anaconda}, which comes with python 2.7 and all the necessary libraries to keep you busy for a while.
+
+
+
+
+
+\section{IDE}
+
+IDE stands for Integrated Development Environment, and it is the application that allows you to program through a graphical interface. For example, the popular programs like Stata and Matlab are graphically integrated by default, so when you run them, you are automatically working in their IDEs.
+ 
+Here, I will concentrate on two of my favorites IDEs for Python: \href{https://pypi.python.org/pypi/spyder}{Spyder} and the \href{http://ipython.org/notebook.html}{IPython Notebooks}. Both tools come already in the Anaconda distribution, so once you have installed it, fire up the \emph{Launcher} application. The Anaconda Launcher gives you access to both IDEs, so you are free to choose between them. Here I will give you a brief description of their differences in order for you to decide which one is more suitable for your work.
+
+
+\subsection{Spyder}
+Spyder is very similar to the Matlab interface. If you are doing heavy-duty coding, I advise you to use this IDE since it allows you to keep track of your variables and data structures in a neat and organized manner. Another favorite IDE that is very similar to Spyder is the \href{http://www.iep-project.org/}{IEP} IDE. Personally, I prefer IEP because it is very robust and fast, although it does not come with all the debugging utilities that Spyder has. Additionally, IEP does not come with Anaconda so you will need to install it separately.
+
+
+\subsection{IPython Notebooks}
+
+The IPython notebooks are executable documents. That is, you have a word-type of document that you can format, but with the advantage that you can embed blocks of code and execute it in order to print the output into the document. The advantage of this tool is that it allows other users to play with you code more easily, and keeps your project very neat. In fact, you can export an IPython notebook to a latex in order to generate nice PDF document out of it. This IDE is more suitable if you are not writing insane amounts of code and if your intention is to communicate your program more effectively.
+
+
+
+
+
+\section{Native Elements}
+
+The native elements are data types, structures, and functions that are provided by default in python instead of an external library. Python comes with very useful native elements that will allow you to make a huge progress in a a few steps.
+
+
+\subsection{Data Types}
+
+\href{https://docs.python.org/2/tutorial/introduction.html#numbers}{Integers and floats} are automatically managed by python. Just remember that if you divide two integers, \textbf{you will get an integer back}, which is a common source of error in early python programs. The other data type you should master are \href{https://docs.python.org/2/tutorial/introduction.html#strings}{strings}. Python is extremely good at handling strings. That is the reason why it has become the main tool for text analysis and related fields. Finally, you should know about \href{}{Boolean} types, which are binary variables taking either True or False values.
+
+
+\subsection{Data Structures}
+
+Like every programming language, python has several data structures that will help in your data processing. I advise you to get familiar with \href{https://docs.python.org/2/tutorial/datastructures.html#lists}{lists}, \href{https://docs.python.org/2/tutorial/datastructures.html#lists}{dictionaries}, and \href{https://docs.python.org/2/tutorial/datastructures.html#sets}{sets}.
+
+
+\subsection{Control Flow}
+
+Programming 101: \href{https://docs.python.org/2/reference/compound_stmts.html#if}{if-else} statements and \href{https://docs.python.org/2/reference/compound_stmts.html#for}{for-loops}; both of these statements are vital in any language. 
+
+
+\subsection{Functions}
+
+Python comes with many native functions. I recommend to start by mastering \href{https://docs.python.org/2/library/functions.html#abs}{abs}, \href{https://docs.python.org/2/library/functions.html#all}{all}, \href{https://docs.python.org/2/library/functions.html#any}{any}, \href{https://docs.python.org/2/library/functions.html#enumerate}{enumerate}, \href{https://docs.python.org/2/library/functions.html#eval}{eval}, \href{https://docs.python.org/2/library/functions.html#filter}{filter}, \href{https://docs.python.org/2/library/functions.html#float}{float}, \href{https://docs.python.org/2/library/functions.html#int}{int}, \href{https://docs.python.org/2/library/functions.html#len}{len}, \href{https://docs.python.org/2/library/functions.html#list}{list}, \href{https://docs.python.org/2/library/functions.html#map}{map}, \href{https://docs.python.org/2/library/functions.html#max}{max}, \href{https://docs.python.org/2/library/functions.html#min}{min}, \href{https://docs.python.org/2/library/functions.html#open}{open}, \href{https://docs.python.org/2/library/functions.html#pow}{pow}, \href{https://docs.python.org/2/library/functions.html#range}{range}, \href{https://docs.python.org/2/library/functions.html#reduce}{reduce}, \href{https://docs.python.org/2/library/functions.html#round}{round}, \href{https://docs.python.org/2/library/functions.html#func-set}{set}, \href{https://docs.python.org/2/library/functions.html#slice}{slice}, \href{https://docs.python.org/2/library/functions.html#sorted}{sorted}, \href{https://docs.python.org/2/library/functions.html#sorted}{str},
+\href{https://docs.python.org/2/library/functions.html#sum}{sum}.
+
+
+
+\subsection{Extra}
+
+An extra tool that will come in handy is \href{https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions}{list comprehension}. This is a compact way of constructing and evaluating lists that not only simplifies your code, but speeds it up considerably.
+
+
+
+
+
+
+
+\section{Libraries}
+
+Now that you are proficient in python, it is time to expand your horizons. There are tons of cool and useful libraries that will help you to perform different types of analysis. I strongly advise to become familiar with a few:  \href{http://matplotlib.org/users/pyplot_tutorial.html}{Matplotib}, \href{http://wiki.scipy.org/Tentative_NumPy_Tutorial}{Numpy}, \href{http://docs.scipy.org/doc/scipy/reference/tutorial/}{Scipy}, \href{http://networkx.github.io/documentation/latest/tutorial/}{NetworkX}, \href{http://scikit-learn.org/stable/tutorial/}{Scikit-Learn}, \href{https://docs.python.org/2/library/csv.html}{csv}, and \href{https://docs.python.org/2/library/pickle.html}{pickle}.
+
+
+
+\subsection{Matplotlib}
+
+Matplotlib is a plotting library. It is extremely intuitive, comprehensive, and flexible. After using Matplotlib, you will hardly seek to use anything else for your plots.
+
+
+
+\subsection{Numpy}
+
+\href{http://wiki.scipy.org/Tentative_NumPy_Tutorial}{Numpy} is one of the best libraries available for Python. It is a scientific computing library of a similar caliber as Matlab. Numpy is a key library in the Python community since several scientific libraries use it. Its data structures and vectorized operations can speed up your code in orders of magnitude.
+
+If you are familiar with Matlab, transitioning to Numpy is natural, for which I recommend \href{http://mathesaurus.sourceforge.net/matlab-numpy.html}{this guide}. If you are new to scientific computing, then I recommend studying the \href{ttp://wiki.scipy.org/Tentative_NumPy_Tutorial}{official Numpy tutorial}. For the purpose of this project, I suggest you focus on sections \href{http://wiki.scipy.org/Tentative_NumPy_Tutorial#head-6a1bc005bd80e1b19f812e1e64e0d25d50f99fe2}{2} and \href{http://wiki.scipy.org/Tentative_NumPy_Tutorial#head-62ef2d3c0a5b4b7d6fdc48e4a60fe48b1ffe5006}{3}.
+
+
+
+
+\subsection{Scipy}
+
+If you are working with me, you will most likely make extensive use of statistical tools. For this purpose, you should learn all about \href{http://docs.scipy.org/doc/scipy/reference/tutorial/}{Scipy}. Scipy is a collection of statistical distributions and tests that will make your life easier. It is very comprehensive in the families of distributions that they have implemented. Unfortunately, Scipy does not contain fancier econometric procedures like the ones implemented in Stata (time series and panel data analysis). There are other libraries that try to amend this, for example \href{http://pandas.pydata.org/}{Pandas}. However, the econometrics community has not yet jumped into the Python wage, which makes these alternative not as good as Stata. The good news is that almost everything that is implemented in Stata is also implemented in R. Therefore, you can use the useful library \href{http://rpy.sourceforge.net/}{RPy2}, which is nothing else than an interface between python and R. With RPy2 you can run your code in Python and call R to perform a test on your data and get back the results in your python program.
+
+
+
+\subsection{NetworkX}
+
+If you want to analyze networks, \href{http://networkx.github.io/documentation/latest/tutorial/}{NetworkX} provides a comprehensive collection of algorithms for that purpose. The implementation is very elegant, so it allows a lot of flexibility on how you specify a networks (the node can be almost any data type or structure), which is useful if you want to make some fancy simulations.
+
+
+
+\subsection{Scikit-Learn}
+
+If you are fed up with linear regressions, you might want to look into machine learning. For this, python provides \href{http://scikit-learn.org/stable/tutorial/}{Scikit-Learn}, a vast library of machine learning algorithm to analyze any kind of data.
+
+
+
+\subsection{CSV}
+
+When you want to import or export data, the most common format is the comma separated value (csv). The library \href{https://docs.python.org/2/library/csv.html}{csv} provides the tools for that in a very intuitive way.
+
+
+\subsection{Pickle}
+
+Another tool to import/export data is \href{https://docs.python.org/2/library/pickle.html}{pickle}. The difference with csv is that pickle is not limited to csv files, but it can take almost any data structure and save it in the hard drive for lated usage. So, if created a fancy network where both nodes and edges have different attributes, you can save it \emph{as it is} with pickle instead of translating it into a text file. Of course, this comes at the cost of loosing some speed in the process, so you have to consider what is more efficient according to your problem.
+
+
+
+\section{Ready to Go}
+
+These are the fundamental tools that, in my experience, you should learn to become proficient in python in a few days. Once you master these tools, you learning curve to use other python libraries will be quite flat, allowing you to focus on more important scientific tasks than reading tutorials. Remember that this is only a collections a pointers intended to help you navigate through the learning process in a more efficient way. For a more in-depth review of different python libraries and tools, I recommend the following books.
+
+\begin{itemize}
+\item \href{http://www.swaroopch.com/notes/python/}{A Byte of Python}: An excellent book that covers lots of topics. Best of all, it is free.
+\item \href{http://greenteapress.com/thinkstats/}{Think Stats}: An introductory course to statistics through the lens of python programming. You will learn stats in the most intuitive way, by performing simulated experiments  and making sense of strange concepts in a natural way. It is also free!
+\item \href{http://mediashow.ru/sites/default/files/books/2011/11/social.network.analysis.for_.startups.1449306462.pdf}{Social Network Analysis for Startups}: An introductory course to network analysis that teaches yo the essentials, from scraping data from the web to visualizing your networks. All free and all python.
+\item \href{http://quant-econ.net/py/index.html}{Quantitative Economics}: This is a pretty standard course in numerical methods for economics that uses python. If you are into standard equilibrium economics, this is a must.
+\item \href{http://scikit-learn.org/stable/tutorial/basic/tutorial.html}{An Introduction to Machine Learning with Scikit-Learn}: A great introduction to the field of machine learning, with hands-on experience as you go.
+\end{itemize}
+ 
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
